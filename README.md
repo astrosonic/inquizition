@@ -32,7 +32,8 @@ An OpenTriviaDB API based web app that lets you play quizes for fun!
 
 ### v0.01.5 (oncoming)
 1. Added initial build for main menu
-To be decided
+
+_To be decided_
 
 ## Usage (as of v0.01.4)
 1. Open `pickcatg.html` in your favorite browser
