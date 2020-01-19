@@ -1,3 +1,8 @@
+function gotoSlct()
+{
+    document.location.href="pickcatg.html";
+}
+
 function slctCatg(name)
 {
     localStorage.setItem("catgcont",name);
