@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Step 2 of 3</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css3/extfonts.css" />
+        <link rel="stylesheet" href="css3/uikit.min.css" />
+        <script src="jscn/pickques.js"></script>
+        <script src="jscn/uikit.min.js"></script>
+        <script src="jscn/uikit-icons.min.js"></script>
+    </head>
+    <body>
+        <div style="background: #222222">
+            <div class="uk-container">
+                <h1 style="font-family: AkzidenzGroteskMedium; color: #32d296; padding-top: 10px;">Pick question count</h1>
+                <p style="font-family: AkzidenzGroteskRegular; color: #ffffff;">Step 2 of 3</p>
+                <!--<p style="font-family: AkzidenzGroteskMedium; color: #ffffff;">Multiplier = Question Count x 0.01</p>-->
+                <div class="uk-child-width-1-1 uk-child-width-1-1@s uk-grid-small uk-light" uk-grid>
+                    <div>
+                        <div class="uk-background-blend-multiply uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(imgs/catg/misc.jpg);">
+                            <p class="uk-h4" style="font-family: AkzidenzGroteskMedium; text-align: center;">Any number of questions [+0.25x] [25 min]</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-child-width-1-2 uk-child-width-1-5@s uk-grid-small uk-light" uk-grid>
+                    <div>
+                        <div class="uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" onclick="slctCont('5')">
+                            <p class="uk-h1" style="font-family: AkzidenzGroteskMedium; text-align: center;">5</p>
+                        </div>
+                        <div uk-drop="pos: bottom-justify; offset: 15;">
+                            <div class="uk-card uk-card-body uk-card-default" style="padding:5px; background-color: #333333; color: #ffffff; font-family: AkzidenzGroteskRegular;">
+                                Duration<div style="color: #ffffff; font-family: EXORegular; font-size:225%">5 min</div>
+                                Multiplier<div style="color: #ffffff; font-family: EXORegular; font-size:225%">0.05x</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" onclick="slctCont('10')">
+                            <p class="uk-h1" style="font-family: AkzidenzGroteskMedium; text-align: center;">10</p>
+                        </div>
+                        <div uk-drop="pos: bottom-justify; offset: 15;">
+                            <div class="uk-card uk-card-body uk-card-default" style="padding:5px; background-color: #333333; color: #ffffff; font-family: AkzidenzGroteskRegular;">
+                                Duration<div style="color: #ffffff; font-family: EXORegular; font-size:225%">10 min</div>
+                                Multiplier<div style="color: #ffffff; font-family: EXORegular; font-size:225%">0.10x</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" onclick="slctCont('15')">
+                            <p class="uk-h1" style="font-family: AkzidenzGroteskMedium; text-align: center;">15</p>
+                        </div>
+                        <div uk-drop="pos: bottom-justify; offset: 15;">
+                            <div class="uk-card uk-card-body uk-card-default" style="padding:5px; background-color: #333333; color: #ffffff; font-family: AkzidenzGroteskRegular;">
+                                Duration<div style="color: #ffffff; font-family: EXORegular; font-size:225%">15 min</div>
+                                Multiplier<div style="color: #ffffff; font-family: EXORegular; font-size:225%">0.15x</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" onclick="slctCont('20')">
+                            <p class="uk-h1" style="font-family: AkzidenzGroteskMedium; text-align: center;">20</p>
+                        </div>
+                        <div uk-drop="pos: bottom-justify; offset: 15;">
+                            <div class="uk-card uk-card-body uk-card-default" style="padding:5px; background-color: #333333; color: #ffffff; font-family: AkzidenzGroteskRegular;">
+                                Duration<div style="color: #ffffff; font-family: EXORegular; font-size:225%">20 min</div>
+                                Multiplier<div style="color: #ffffff; font-family: EXORegular; font-size:225%">0.20x</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" onclick="slctCont('25')">
+                            <p class="uk-h1" style="font-family: AkzidenzGroteskMedium; text-align: center;">25</p>
+                        </div>
+                        <div uk-drop="pos: bottom-justify; offset: 15;">
+                            <div class="uk-card uk-card-body uk-card-default" style="padding:5px; background-color: #333333; color: #ffffff; font-family: AkzidenzGroteskRegular;">
+                                Duration<div style="color: #ffffff; font-family: EXORegular; font-size:225%">25 min</div>
+                                Multiplier<div style="color: #ffffff; font-family: EXORegular; font-size:225%">0.25x</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" onclick="slctCont('30')">
+                            <p class="uk-h1" style="font-family: AkzidenzGroteskMedium; text-align: center;">30</p>
+                        </div>
+                        <div uk-drop="pos: bottom-justify; offset: 15;">
+                            <div class="uk-card uk-card-body uk-card-default" style="padding:5px; background-color: #333333; color: #ffffff; font-family: AkzidenzGroteskRegular;">
+                                Duration<div style="color: #ffffff; font-family: EXORegular; font-size:225%">30 min</div>
+                                Multiplier<div style="color: #ffffff; font-family: EXORegular; font-size:225%">0.30x</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" onclick="slctCont('35')">
+                            <p class="uk-h1" style="font-family: AkzidenzGroteskMedium; text-align: center;">35</p>
+                        </div>
+                        <div uk-drop="pos: bottom-justify; offset: 15;">
+                            <div class="uk-card uk-card-body uk-card-default" style="padding:5px; background-color: #333333; color: #ffffff; font-family: AkzidenzGroteskRegular;">
+                                Duration<div style="color: #ffffff; font-family: EXORegular; font-size:225%">35 min</div>
+                                Multiplier<div style="color: #ffffff; font-family: EXORegular; font-size:225%">0.35x</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" onclick="slctCont('40')">
+                            <p class="uk-h1" style="font-family: AkzidenzGroteskMedium; text-align: center;">40</p>
+                        </div>
+                        <div uk-drop="pos: bottom-justify; offset: 15;">
+                            <div class="uk-card uk-card-body uk-card-default" style="padding:5px; background-color: #333333; color: #ffffff; font-family: AkzidenzGroteskRegular;">
+                                Duration<div style="color: #ffffff; font-family: EXORegular; font-size:225%">40 min</div>
+                                Multiplier<div style="color: #ffffff; font-family: EXORegular; font-size:225%">0.40x</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" onclick="slctCont('45')">
+                            <p class="uk-h1" style="font-family: AkzidenzGroteskMedium; text-align: center;">45</p>
+                        </div>
+                        <div uk-drop="pos: bottom-justify; offset: 15;">
+                            <div class="uk-card uk-card-body uk-card-default" style="padding:5px; background-color: #333333; color: #ffffff; font-family: AkzidenzGroteskRegular;">
+                                Duration<div style="color: #ffffff; font-family: EXORegular; font-size:225%">45 min</div>
+                                Multiplier<div style="color: #ffffff; font-family: EXORegular; font-size:225%">0.45x</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" onclick="slctCont('50')">
+                            <p class="uk-h1" style="font-family: AkzidenzGroteskMedium; text-align: center;">50</p>
+                        </div>
+                        <div uk-drop="pos: bottom-justify; offset: 15;">
+                            <div class="uk-card uk-card-body uk-card-default" style="padding:5px; background-color: #333333; color: #ffffff; font-family: AkzidenzGroteskRegular;">
+                                Duration<div style="color: #ffffff; font-family: EXORegular; font-size:225%">50 min</div>
+                                Multiplier<div style="color: #ffffff; font-family: EXORegular; font-size:225%">0.50x</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br><br><br><br><br>
+        </div>
+        <br>
+    </body>
+</html>

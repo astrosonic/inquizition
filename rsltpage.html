@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Results</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css3/extfonts.css" />
+        <link rel="stylesheet" href="css3/uikit.min.css" />
+        <script src="jscn/uikit.min.js"></script>
+        <script src="jscn/uikit-icons.min.js"></script>
+    </head>
+    <body>
+    <div style="background: #222222">
+        <div class="uk-container">
+            <div class="uk-card uk-card-small uk-card-secondary uk-card-body" style="z-index: 980;" uk-sticky="offset: 10; bottom: #top">
+                <div class="uk-text-center" style="color: #32d296; font-family: AkzidenzGroteskMedium; font-size: 200%;" id="time">Results</div>
+            </div>
+            <br>
+            <div class="uk-child-width-1-2@s uk-grid-small" uk-grid>
+                <div>
+                    <div class="uk-tile uk-tile-secondary uk-padding-small">
+                        <h3 style="font-family: AkzidenzGroteskMedium; color: #6b6bb3;">Cummulative Multiplier</h3>
+                        <table class="uk-table uk-table-small uk-table-divider">
+                            <thead style="background-color: #2e2e4d;">
+                            <tr style="font-family: AkzidenzGroteskMedium">
+                                <th>Attribute</th>
+                                <th>Tier Level</th>
+                                <th>Multiplier</th>
+                            </tr>
+                            </thead>
+                            <tbody style="font-family: AkzidenzGroteskRegular">
+                            <tr>
+                                <td>Category</td>
+                                <td id="ctnmtabl">name</td>
+                                <td id="ctmltabl"></td>
+                            </tr>
+                            <tr>
+                                <td>Difficulty</td>
+                                <td id="dfnmtabl" class="uk-text-capitalize"></td>
+                                <td id="dfmltabl"></td>
+                            </tr>
+                            <tr>
+                                <td>Count</td>
+                                <td id="qcnmtabl"></td>
+                                <td id="qcmltabl"></td>
+                            </tr>
+                            <tr style="background-color: #2e2e4d; font-family: AkzidenzGroteskMedium;">
+                                <td>TOTAL</td>
+                                <td>1 + </td>
+                                <td id="multgros"></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-tile uk-tile-secondary uk-padding-small">
+                        <h3 style="font-family: AkzidenzGroteskMedium; color: #36b336;">Effective Score</h3>
+                        <table class="uk-table uk-table-small uk-table-divider">
+                            <thead style="background-color: #174d17">
+                            <tr style="font-family: AkzidenzGroteskMedium">
+                                <th>Attribute</th>
+                                <th>Count</th>
+                                <th>Points</th>
+                                <th>Total</th>
+                            </tr>
+                            </thead>
+                            <tbody style="font-family: AkzidenzGroteskRegular">
+                            <tr>
+                                <td>Correct</td>
+                                <td id="crcn"></td>
+                                <td id="crrt"></td>
+                                <td id="crtt"></td>
+                            </tr>
+                            <tr>
+                                <td>Incorrect</td>
+                                <td id="incn"></td>
+                                <td id="inrt"></td>
+                                <td id="ictt"></td>
+                            </tr>
+                            <tr>
+                                <td>Unattempted</td>
+                                <td id="uncn"></td>
+                                <td id="unrt"></td>
+                                <td id="untt"></td>
+                            </tr>
+                            <tr style="background-color: #174d17; font-family: AkzidenzGroteskMedium;">
+                                <td>TOTAL</td>
+                                <td id="qcnm"></td>
+                                <td></td>
+                                <td id="fixi"></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+    <br>
+    <script>
+        document.getElementById("dfnmtabl").innerHTML=localStorage.getItem("diffname");
+        document.getElementById("ctnmtabl").innerHTML=localStorage.getItem("catgname");
+        document.getElementById("qcnmtabl").innerHTML=localStorage.getItem("contname")+" questions";
+        document.getElementById("dfmltabl").innerHTML=localStorage.getItem("diffbnus");
+        document.getElementById("ctmltabl").innerHTML=localStorage.getItem("catgbnus");
+        document.getElementById("qcmltabl").innerHTML=localStorage.getItem("contbnus");
+        console.log(localStorage.getItem("diffbnus"));
+        console.log(localStorage.getItem("catgbnus"));
+        var multgros = parseFloat(localStorage.getItem("diffbnus"))+parseFloat(localStorage.getItem("catgbnus"))+parseFloat(localStorage.getItem("contbnus"))
+        document.getElementById("multgros").innerHTML=multgros.toFixed(2);
+        document.getElementById("crcn").innerHTML=localStorage.getItem("contrite");
+        document.getElementById("incn").innerHTML=localStorage.getItem("contwrng");
+        document.getElementById("uncn").innerHTML=localStorage.getItem("contleft");
+        var coingros = 1+parseFloat(multgros);
+        var totlgros = parseInt(localStorage.getItem("contrite"))*coingros;
+        document.getElementById("crrt").innerHTML=coingros.toFixed(2);
+        document.getElementById("fixi").innerHTML=totlgros.toFixed(2);
+        document.getElementById("crtt").innerHTML=totlgros.toFixed(2);
+    </script>
+    </body>
+</html>

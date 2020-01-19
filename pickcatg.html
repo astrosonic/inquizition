@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Step 1 of 3</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css3/extfonts.css" />
+        <link rel="stylesheet" href="css3/uikit.min.css" />
+        <script src="jscn/pickques.js"></script>
+        <script src="jscn/uikit.min.js"></script>
+        <script src="jscn/uikit-icons.min.js"></script>
+    </head>
+    <body>
+        <div style="background: #222222">
+            <div class="uk-container">
+                <h1 style="font-family: AkzidenzGroteskMedium; color: #32d296; padding-top: 10px;">Select category</h1>
+                <p style="font-family: AkzidenzGroteskRegular; color: #ffffff;">Select 1 of 3</p>
+                <div class="uk-child-width-1-2 uk-child-width-1-6@s uk-grid-small uk-light" uk-grid>
+                    <div>
+                        <div class="uk-background-blend-multiply uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" onclick="slctCatg('9')" style="background-image: url(imgs/catg/genk.jpg);">
+                            <p class="uk-h4" style="font-family: AkzidenzGroteskMedium; text-align: center;">General Knowledge</p>
+                        </div>
+                        <div uk-drop="pos: bottom-justify; offset: 15;">
+                            <div class="uk-card uk-card-body uk-card-default" style="padding:5px; background-color: #333333; color: #ffffff; font-family: AkzidenzGroteskRegular;">
+                                Multiplier
+                                <h1 style="color: #ffffff; font-family: EXORegular;">0.30x</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-background-blend-multiply uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" onclick="slctCatg('10')" style="background-image: url(imgs/catg/book.jpg);">
+                            <p class="uk-h4" style="font-family: AkzidenzGroteskMedium; text-align: center;">Books</p>
+                        </div>
+                        <div uk-drop="pos: bottom-justify; offset: 15;">
+                            <div class="uk-card uk-card-body uk-card-default" style="padding:5px; background-color: #333333; color: #ffffff; font-family: AkzidenzGroteskRegular;">
+                                Multiplier
+                                <h1 style="color: #ffffff; font-family: EXORegular;">0.30x</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-background-blend-multiply uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" onclick="slctCatg('11')" style="background-image: url(imgs/catg/movi.jpg);">
+                            <p class="uk-h4" style="font-family: AkzidenzGroteskMedium; text-align: center;">Film</p>
+                        </div>
+                        <div uk-drop="pos: bottom-justify; offset: 15;">
+                            <div class="uk-card uk-card-body uk-card-default" style="padding:5px; background-color: #333333; color: #ffffff; font-family: AkzidenzGroteskRegular;">
+                                Multiplier
+                                <h1 style="color: #ffffff; font-family: EXORegular;">0.30x</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-background-blend-multiply uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" onclick="slctCatg('12')" style="background-image: url(imgs/catg/musc.jpg);">
+                            <p class="uk-h4" style="font-family: AkzidenzGroteskMedium; text-align: center;">Music</p>
+                        </div>
+                        <div uk-drop="pos: bottom-justify; offset: 15;">
+                            <div class="uk-card uk-card-body uk-card-default" style="padding:5px; background-color: #333333; color: #ffffff; font-family: AkzidenzGroteskRegular;">
+                                Multiplier
+                                <h1 style="color: #ffffff; font-family: EXORegular;">0.30x</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-background-blend-multiply uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" onclick="slctCatg('13')" style="background-image: url(imgs/catg/thea.jpg);">
+                            <p class="uk-h4" style="font-family: AkzidenzGroteskMedium; text-align: center;">Musical & Theatres</p>
+                        </div>
+                        <div uk-drop="pos: bottom-justify; offset: 15;">
+                            <div class="uk-card uk-card-body uk-card-default" style="padding:5px; background-color: #333333; color: #ffffff; font-family: AkzidenzGroteskRegular;">
+                                Multiplier
+                                <h1 style="color: #ffffff; font-family: EXORegular;">0.30x</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-background-blend-multiply uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" onclick="slctCatg('14')" style="background-image: url(imgs/catg/tele.jpg);">
+                            <p class="uk-h4" style="font-family: AkzidenzGroteskMedium; text-align: center;">Television</p>
+                        </div>
+                        <div uk-drop="pos: bottom-justify; offset: 15;">
+                            <div class="uk-card uk-card-body uk-card-default" style="padding:5px; background-color: #333333; color: #ffffff; font-family: AkzidenzGroteskRegular;">
+                                Multiplier
+                                <h1 style="color: #ffffff; font-family: EXORegular;">0.30x</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-background-blend-multiply uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" onclick="slctCatg('15')" style="background-image: url(imgs/catg/pcgm.jpg);">
+                            <p class="uk-h4" style="font-family: AkzidenzGroteskMedium; text-align: center;">Video Games</p>
+                        </div>
+                        <div uk-drop="pos: bottom-justify; offset: 15;">
+                            <div class="uk-card uk-card-body uk-card-default" style="padding:5px; background-color: #333333; color: #ffffff; font-family: AkzidenzGroteskRegular;">
+                                Multiplier
+                                <h1 style="color: #ffffff; font-family: EXORegular;">0.40x</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-background-blend-multiply uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" onclick="slctCatg('16')" style="background-image: url(imgs/catg/bogm.jpg);">
+                            <p class="uk-h4" style="font-family: AkzidenzGroteskMedium; text-align: center;">Board Games</p>
+                        </div>
+                        <div uk-drop="pos: bottom-justify; offset: 15;">
+                            <div class="uk-card uk-card-body uk-card-default" style="padding:5px; background-color: #333333; color: #ffffff; font-family: AkzidenzGroteskRegular;">
+                                Multiplier
+                                <h1 style="color: #ffffff; font-family: EXORegular;">0.40x</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-background-blend-multiply uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" onclick="slctCatg('17')" style="background-image: url(imgs/catg/natr.jpg);">
+                            <p class="uk-h4" style="font-family: AkzidenzGroteskMedium; text-align: center;">Science & Nature</p>
+                        </div>
+                        <div uk-drop="pos: bottom-justify; offset: 15;">
+                            <div class="uk-card uk-card-body uk-card-default" style="padding:5px; background-color: #333333; color: #ffffff; font-family: AkzidenzGroteskRegular;">
+                                Multiplier
+                                <h1 style="color: #ffffff; font-family: EXORegular;">0.40x</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-background-blend-multiply uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" onclick="slctCatg('18')" style="background-image: url(imgs/catg/comp.jpg);">
+                            <p class="uk-h4" style="font-family: AkzidenzGroteskMedium; text-align: center;">Computers</p>
+                        </div>
+                        <div uk-drop="pos: bottom-justify; offset: 15;">
+                            <div class="uk-card uk-card-body uk-card-default" style="padding:5px; background-color: #333333; color: #ffffff; font-family: AkzidenzGroteskRegular;">
+                                Multiplier
+                                <h1 style="color: #ffffff; font-family: EXORegular;">0.40x</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-background-blend-multiply uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" onclick="slctCatg('19')" style="background-image: url(imgs/catg/math.jpg);">
+                            <p class="uk-h4" style="font-family: AkzidenzGroteskMedium; text-align: center;">Mathematics</p>
+                        </div>
+                        <div uk-drop="pos: bottom-justify; offset: 15;">
+                            <div class="uk-card uk-card-body uk-card-default" style="padding:5px; background-color: #333333; color: #ffffff; font-family: AkzidenzGroteskRegular;">
+                                Multiplier
+                                <h1 style="color: #ffffff; font-family: EXORegular;">0.40x</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-background-blend-multiply uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" onclick="slctCatg('20')" style="background-image: url(imgs/catg/mylo.jpg);">
+                            <p class="uk-h4" style="font-family: AkzidenzGroteskMedium; text-align: center;">Mythology</p>
+                        </div>
+                        <div uk-drop="pos: bottom-justify; offset: 15;">
+                            <div class="uk-card uk-card-body uk-card-default" style="padding:5px; background-color: #333333; color: #ffffff; font-family: AkzidenzGroteskRegular;">
+                                Multiplier
+                                <h1 style="color: #ffffff; font-family: EXORegular;">0.40x</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-background-blend-multiply uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" onclick="slctCatg('21')" style="background-image: url(imgs/catg/sprt.jpg);">
+                            <p class="uk-h4" style="font-family: AkzidenzGroteskMedium; text-align: center;">Sports</p>
+                        </div>
+                        <div uk-drop="pos: bottom-justify; offset: 15;">
+                            <div class="uk-card uk-card-body uk-card-default" style="padding:5px; background-color: #333333; color: #ffffff; font-family: AkzidenzGroteskRegular;">
+                                Multiplier
+                                <h1 style="color: #ffffff; font-family: EXORegular;">0.50x</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-background-blend-multiply uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" onclick="slctCatg('22')" style="background-image: url(imgs/catg/geog.jpg);">
+                            <p class="uk-h4" style="font-family: AkzidenzGroteskMedium; text-align: center;">Geography</p>
+                        </div>
+                        <div uk-drop="pos: bottom-justify; offset: 15;">
+                            <div class="uk-card uk-card-body uk-card-default" style="padding:5px; background-color: #333333; color: #ffffff; font-family: AkzidenzGroteskRegular;">
+                                Multiplier
+                                <h1 style="color: #ffffff; font-family: EXORegular;">0.50x</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-background-blend-multiply uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" onclick="slctCatg('23')" style="background-image: url(imgs/catg/hist.jpg);">
+                            <p class="uk-h4" style="font-family: AkzidenzGroteskMedium; text-align: center;">History</p>
+                        </div>
+                        <div uk-drop="pos: bottom-justify; offset: 15;">
+                            <div class="uk-card uk-card-body uk-card-default" style="padding:5px; background-color: #333333; color: #ffffff; font-family: AkzidenzGroteskRegular;">
+                                Multiplier
+                                <h1 style="color: #ffffff; font-family: EXORegular;">0.50x</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-background-blend-multiply uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" onclick="slctCatg('24')" style="background-image: url(imgs/catg/poly.jpg);">
+                            <p class="uk-h4" style="font-family: AkzidenzGroteskMedium; text-align: center;">Politics</p>
+                        </div>
+                        <div uk-drop="pos: bottom-justify; offset: 15;">
+                            <div class="uk-card uk-card-body uk-card-default" style="padding:5px; background-color: #333333; color: #ffffff; font-family: AkzidenzGroteskRegular;">
+                                Multiplier
+                                <h1 style="color: #ffffff; font-family: EXORegular;">0.50x</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-background-blend-multiply uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" onclick="slctCatg('25')" style="background-image: url(imgs/catg/artc.jpg);">
+                            <p class="uk-h4" style="font-family: AkzidenzGroteskMedium; text-align: center;">Art</p>
+                        </div>
+                        <div uk-drop="pos: bottom-justify; offset: 15;">
+                            <div class="uk-card uk-card-body uk-card-default" style="padding:5px; background-color: #333333; color: #ffffff; font-family: AkzidenzGroteskRegular;">
+                                Multiplier
+                                <h1 style="color: #ffffff; font-family: EXORegular;">0.50x</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-background-blend-multiply uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" onclick="slctCatg('26')" style="background-image: url(imgs/catg/celb.jpg);">
+                            <p class="uk-h4" style="font-family: AkzidenzGroteskMedium; text-align: center;">Celebrities</p>
+                        </div>
+                        <div uk-drop="pos: bottom-justify; offset: 15;">
+                            <div class="uk-card uk-card-body uk-card-default" style="padding:5px; background-color: #333333; color: #ffffff; font-family: AkzidenzGroteskRegular;">
+                                Multiplier
+                                <h1 style="color: #ffffff; font-family: EXORegular;">0.50x</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-background-blend-multiply uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" onclick="slctCatg('27')" style="background-image: url(imgs/catg/anim.jpg);">
+                            <p class="uk-h4" style="font-family: AkzidenzGroteskMedium; text-align: center;">Animals</p>
+                        </div>
+                        <div uk-drop="pos: bottom-justify; offset: 15;">
+                            <div class="uk-card uk-card-body uk-card-default" style="padding:5px; background-color: #333333; color: #ffffff; font-family: AkzidenzGroteskRegular;">
+                                Multiplier
+                                <h1 style="color: #ffffff; font-family: EXORegular;">0.60x</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-background-blend-multiply uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" onclick="slctCatg('28')" style="background-image: url(imgs/catg/vehi.jpg);">
+                            <p class="uk-h4" style="font-family: AkzidenzGroteskMedium; text-align: center;">Vehicles</p>
+                        </div>
+                        <div uk-drop="pos: bottom-justify; offset: 15;">
+                            <div class="uk-card uk-card-body uk-card-default" style="padding:5px; background-color: #333333; color: #ffffff; font-family: AkzidenzGroteskRegular;">
+                                Multiplier
+                                <h1 style="color: #ffffff; font-family: EXORegular;">0.60x</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-background-blend-multiply uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" onclick="slctCatg('29')" style="background-image: url(imgs/catg/comc.jpg);">
+                            <p class="uk-h4" style="font-family: AkzidenzGroteskMedium; text-align: center;">Comics</p>
+                        </div>
+                        <div uk-drop="pos: bottom-justify; offset: 15;">
+                            <div class="uk-card uk-card-body uk-card-default" style="padding:5px; background-color: #333333; color: #ffffff; font-family: AkzidenzGroteskRegular;">
+                                Multiplier
+                                <h1 style="color: #ffffff; font-family: EXORegular;">0.60x</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-background-blend-multiply uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" onclick="slctCatg('30')" style="background-image: url(imgs/catg/gadg.jpg);">
+                            <p class="uk-h4" style="font-family: AkzidenzGroteskMedium; text-align: center;">Gadgets</p>
+                        </div>
+                        <div uk-drop="pos: bottom-justify; offset: 15;">
+                            <div class="uk-card uk-card-body uk-card-default" style="padding:5px; background-color: #333333; color: #ffffff; font-family: AkzidenzGroteskRegular;">
+                                Multiplier
+                                <h1 style="color: #ffffff; font-family: EXORegular;">0.60x</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-background-blend-multiply uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" onclick="slctCatg('31')" style="background-image: url(imgs/catg/mang.jpg);">
+                            <p class="uk-h4" style="font-family: AkzidenzGroteskMedium; text-align: center;">Anime & Manga</p>
+                        </div>
+                        <div uk-drop="pos: bottom-justify; offset: 15;">
+                            <div class="uk-card uk-card-body uk-card-default" style="padding:5px; background-color: #333333; color: #ffffff; font-family: AkzidenzGroteskRegular;">
+                                Multiplier
+                                <h1 style="color: #ffffff; font-family: EXORegular;">0.60x</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-background-blend-multiply uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" onclick="slctCatg('32')" style="background-image: url(imgs/catg/toon.jpg);">
+                            <p class="uk-h4" style="font-family: AkzidenzGroteskMedium; text-align: center;">Cartoon & Anims</p>
+                        </div>
+                        <div uk-drop="pos: bottom-justify; offset: 15;">
+                            <div class="uk-card uk-card-body uk-card-default" style="padding:5px; background-color: #333333; color: #ffffff; font-family: AkzidenzGroteskRegular;">
+                                Multiplier
+                                <h1 style="color: #ffffff; font-family: EXORegular;">0.60x</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br><br><br><br><br>
+        </div>
+        <br>
+    </body>
+</html>
