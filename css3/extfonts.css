@@ -1,0 +1,39 @@
+@font-face {
+    font-family: AkzidenzGroteskMedium;
+    src: url("../font/akgr-md.woff");
+}
+
+@font-face {
+    font-family: AkzidenzGroteskItalic;
+    src: url("../font/akgr-it.woff");
+}
+
+@font-face {
+    font-family: AkzidenzGroteskRegular;
+    src: url("../font/akgr-rg.woff");
+}
+
+@font-face {
+    font-family: DINAlternateBold;
+    src: url("../font/dina-bd.woff");
+}
+
+@font-face {
+    font-family: DINCondensedBold;
+    src: url("../font/dicn-bd.woff");
+}
+
+@font-face {
+    font-family: DINOriginalMedium;
+    src: url("../font/dino-md.woff");
+}
+
+@font-face {
+    font-family: DINProBold;
+    src: url("../font/dinp-bd.woff");
+}
+
+@font-face {
+    font-family: EXORegular;
+    src: url("../font/exol-rg.woff");
+}
