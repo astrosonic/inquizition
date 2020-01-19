@@ -31,6 +31,7 @@ An OpenTriviaDB API based web app that lets you play quizes for fun!
 5. Future scope for adding difficult tactics (like negative score) included
 
 ### v0.01.5 (oncoming)
+1. Added initial build for main menu
 To be decided
 
 ## Usage (as of v0.01.4)
